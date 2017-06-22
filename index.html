@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Agency - Start Bootstrap Theme</title>
+    <title>Rockport Lighthouse</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -56,7 +56,7 @@
                         <a class="page-scroll" href="#page-top">home</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">contact</a>
+                        <a class="page-scroll" href="#contact">contact</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#about">lcbo</a>
@@ -128,47 +128,40 @@
                 </div>
             </div> -->
             <div class="row">
-                <div class="col-md-4 col-sm-6 portfolio-item padding-0">
-                    <a href="#" class="portfolio-link">
-                        <!-- <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div> -->
-                        <img src="img/portfolio/amenities.jpg" class="img-responsive" alt="">
-                    </a>
-                    <!-- <div class="portfolio-caption">
-                        <h4>Amenities</h4>
-                        <p class="text-muted">Graphic Design</p>
-                    </div> -->
+
+                <div id="amenities" class="col-md-4 col-sm-6 portfolio-item midtoggle">
+                		<div id="amenitiesfront" class="portfolio-caption">
+                            <h4>amenities</h4>
+                        </div>
+                        <div id="amenitiesback" class="hidden">
+                			<p>Beer Store</p>
+                			<p>Breakfast</p>
+                			<p>Free Wifi</p>
+                			<p>Kawartha Ice Cream</p>
+                			<p>LCBO</p>
+                			<p>RV Campground</p>
+                		</div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item padding-0">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <!-- <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div> -->
-                        <img src="img/portfolio/hours.jpg" class="img-responsive" alt="">
-                    </a>
-                    <!-- <div class="portfolio-caption">
-                        <h4>Hours</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div> -->
+
+                <div id="hours" class="col-md-4 col-sm-6 portfolio-item midtoggle">
+                    <div id="hoursfront" class="portfolio-caption">
+                        <h4>hours</h4>
+                    </div>
+                    <div id="hoursback" class="hidden">
+                        <p>Mon - Wed:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7am - 7pm</p>
+                        <p>Thurs:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7am - 8pm</p>
+                        <p>Fri - Sat:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7am - 9pm</p>
+                        <p>Sun:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8am - 6pm</p>
+                    </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item padding-0">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <!-- <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div> -->
-                        <img src="img/portfolio/findus.jpg" class="img-responsive" alt="">
-                    </a>
-                    <!-- <div class="portfolio-caption">
-                        <h4>Find Us</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div> -->
+
+                <div id="map" class="col-md-4 col-sm-6 portfolio-item midtoggle">
+                    <div id="mapfront" class="portfolio-caption">
+                        <h4>find us</h4>
+                    </div>
+                    <div id="mapback" class="hidden">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11402.614495351647!2d-75.9187937!3d44.3992316!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3c9fcea313d66dfe!2sRockport+Lighthouse!5e0!3m2!1sen!2sca!4v1498093538985" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
                 </div>
 
             </div>
@@ -241,9 +234,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <footer>
+    <!-- <footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -287,6 +280,34 @@
 
     <!-- Theme JavaScript -->
     <script src="js/agency.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $(".midtoggle").on("click", function() {
+                var buttonId = $(this).attr('id');
+                $("#"+buttonId+"front").toggleClass("hidden", " ");
+                $("#"+buttonId+"back").toggleClass("hidden", " ");
+            });
+
+            // $("#amenities").on("click", function() {
+            //     $("#amenitiesfront").toggleClass("hidden", " ");
+            //     $("#amenitiesback").toggleClass("hidden", " ");
+            // });
+            //
+            // $("#hours").on("click", function() {
+            //     $("#hoursfront").toggleClass("hidden", " ");
+            //     $("#hoursback").toggleClass("hidden", " ");
+            // });
+            //
+            // $("#map").on("click", function() {
+            //     $("#mapfront").toggleClass("hidden", " ");
+            //     $("#mapback").toggleClass("hidden", " ");
+            // });
+
+
+        });
+    </script>
 
 </body>
 

@@ -5,7 +5,7 @@
  */
 body {
   overflow-x: hidden;
-  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .text-muted {
   color: #777777;
@@ -13,10 +13,7 @@ body {
 .text-primary {
   color: #fed136;
 }
-p {
-  font-size: 14px;
-  line-height: 1.75;
-}
+
 p.large {
   font-size: 16px;
 }
@@ -311,10 +308,10 @@ section h3.section-subheading {
   right: 0;
 }
 #portfolio .portfolio-item .portfolio-link {
-  /*display: block;*/
-  /*position: relative;*/
-  /*max-width: 400px;*/
-  /*margin: 0 auto;*/
+  /*display: block;
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;*/
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
   background: rgba(254, 209, 54, 0.9);
@@ -371,6 +368,64 @@ section h3.section-subheading {
     margin: 0 0 30px;
   }
 }*/
+
+#amenities{
+    background: #29648A;
+    height: 350px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#amenities h4 {
+    padding: 10px 20px;
+    color: #FFFFFF;
+    border: 5px solid #FFFFFF;
+}
+#amenitiesback {
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 0.9;
+}
+
+
+#hours{
+    background: #2E9CCA;
+    height: 350px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#hours h4 {
+    padding: 10px 38px;
+    color: #DDD109;
+    border: 5px solid #DDD109;
+}
+#hoursback {
+    color: #DDD109;
+    font-size: 20px;
+    line-height: 0.9;
+}
+
+#map{
+    background: #AAABB8;
+    height: 350px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#map h4 {
+    padding: 10px 35px;
+    color: #25274D;
+    border: 5px solid #25274D;
+}
+#mapback {
+    width: 100%;
+    height: 100%;
+}
+
 
 .carousel-inner .item img {
     width: 100%;
